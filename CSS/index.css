@@ -136,7 +136,7 @@ nav {
 
 .content .left .profile-card {
     width: 100%;
-    height: 83%;
+    height: 85%;
     /* border: 1px solid white; */
     display: flex;
     justify-content: center;
@@ -166,13 +166,17 @@ nav {
 
 .content .right {
     width: 1200px;
-    height: 100%;
-    /* border: 1px solid white; */
+    height: 85%;
+    border-left: 1px solid #ffffff;
+    border-left:15px solid #7d1414;
+    border-radius: 10px;
+    /* box-shadow: white 1px 5px 10px; */
     display: flex;
+    background: white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-right: 1%; */
+    margin-left: 1%;
 }
 
 .content .last {
