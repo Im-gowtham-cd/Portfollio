@@ -287,9 +287,32 @@ nav {
     border-bottom-left-radius: 10px;
 }
 
-.profile-image img{
+.profile-image{
+    position: relative;
+}
+
+.profile-image .jojopic{
     height: 100%;
     width: 100%;
     border-radius: 10px;
     margin: 10%;
+}
+
+.jojologo{
+    position: absolute;
+    top: 5px;
+    height: 150px;
+    width: 300px;
+}
+
+.right{
+    position: relative;
+}
+
+.starplatinum{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 90%;
+    width: 25%;
 }
