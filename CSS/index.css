@@ -369,6 +369,8 @@ nav {
     overflow-y: scroll;
     height: 64%;
     /* border: 1px solid black; */
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .heading p {
