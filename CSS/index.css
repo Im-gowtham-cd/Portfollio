@@ -18,18 +18,15 @@ body {
     width: 99.9vw;
 }
 
+/* Default styles for all devices */
 nav {
     font-family: "Rowdies", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
-    /* border-bottom: 1px solid white; */
+    margin: 10px 1% 5px;
     height: 50px;
     color: white;
-    /* border: 1px solid white; */
-    margin: 0px 1%;
-    margin-top: 10px;
 }
 
 .nav-logo img {
@@ -47,8 +44,6 @@ nav {
     border-radius: 1px;
     align-items: center;
     padding: 10px 100px;
-    /* width: 200px; */
-    /* border: 1px solid white; */
     clip-path: polygon(0px 0px, 100% 0, 325px 60px, 70px 60px);
 }
 
@@ -65,7 +60,6 @@ nav {
     align-items: center;
     width: 60%;
     height: 100%;
-    /* border: 1px solid white; */
 }
 
 .nav-center ul {
@@ -86,12 +80,6 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
-.nav-center ul li a:hover {
-    border-bottom: 5px solid white;
-    border-top: 5px solid white;
-    transition: all 0.2s ease-in-out;
-}
-
 .nav-center ul li a {
     text-decoration: none;
     color: white;
@@ -100,18 +88,96 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
+.nav-center ul li a:hover {
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
 .nav-setting {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 2%; */
     height: 100%;
-    /* border: 1px solid white; */
 }
 
 .nav-setting i {
     font-size: 30px;
     color: white;
+}
+
+/* Tablet devices (768px and up) */
+@media screen and (max-width: 1024px) {
+    nav {
+        margin: 5px 2%;
+    }
+
+    .nav-content {
+        padding: 10px 50px;
+        clip-path: polygon(0px 0px, 100% 0, 225px 60px, 50px 60px);
+    }
+
+    .nav-content p {
+        font-size: 20px;
+        width: 150px;
+    }
+
+    .nav-center {
+        width: 50%;
+    }
+
+    .nav-center ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Mobile devices (767px and below) */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: row;
+        height: auto;
+        /* margin: ; */
+        gap: 10px;
+    }
+
+    .nav-content {
+        padding: 5px 30px;
+        clip-path: polygon(0px 0px, 100% 0, 60px 60px, 70px 40px);
+        /* display: block; */
+    }
+
+    .nav-content p {
+        font-size: 18px;
+        width: 120px;
+    }
+
+    .nav-center {
+        width: 100%;
+        /* display: none; */
+    }
+
+    .nav-center ul {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    .nav-center ul li {
+        width: 100%;
+        height: 40px;
+    }
+
+    .nav-center ul li a {
+        font-size: 16px;
+    }
+
+    .nav-setting {
+        margin-top: 0px;
+    }
+
+    .nav-setting i {
+        font-size: 40px;
+    }
 }
 
 .content {
@@ -122,10 +188,11 @@ nav {
     width: 98%;
     /* border: 1px solid white; */
     margin: 1%;
+    flex-wrap: wrap;
 }
 
 .content .left {
-    width: 450px;
+    flex-basis: 450px;
     height: 100%;
     /* border: 1px solid white; */
     display: flex;
@@ -165,7 +232,7 @@ nav {
 } */
 
 .content .right {
-    width: 1200px;
+    flex-basis: 980px;
     height: 85%;
     /* border-left: 1px solid #ffffff; */
     /* border-left:15px solid #ffe714; */
@@ -181,6 +248,7 @@ nav {
     position: relative;
 }
 
+/* Default styles for all devices */
 .content .last {
     width: 50px;
     height: 85.5%;
@@ -202,7 +270,6 @@ nav {
     font-size: 20px;
     font-weight: 700;
     transition: all 0.2s ease-in-out;
-
 }
 
 .content.last a:hover {
@@ -216,6 +283,43 @@ nav {
     border-radius: 1000px;
     background-color: white;
     /* border-radius: 50%; */
+}
+
+@media screen and (max-width: 1024px) {
+    .content .last {
+        width: 80%;
+        height: 40px;
+        right: -5px;
+        flex-direction: row;
+    }
+
+    .content .last a {
+        font-size: 16px;
+    }
+
+    .content .last img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content .last {
+        width: 100%;
+        height: 35px;
+        right: 0;
+        margin-top: 8px;
+        flex-direction: row;
+    }
+
+    .content .last a {
+        font-size: 14px;
+    }
+
+    .content .last img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .profile-card-item {
@@ -327,7 +431,7 @@ nav {
     height: 25%;
     width: 20%;
     z-index: 1;
-    animation: diowalk 15s alternate;
+    animation: diowalk 30s alternate;
 }
 
 @keyframes diowalk {
@@ -349,7 +453,7 @@ nav {
     height: 25%;
     width: 20%;
     z-index: 1;
-    animation: jotarowalk 15s alternate;
+    animation: jotarowalk 30s alternate;
 }
 
 @keyframes jotarowalk {
