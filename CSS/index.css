@@ -255,6 +255,7 @@ nav {
     flex-direction: column;
     /* background: white; */
     margin: 0;
+    z-index: 2;
 }
 
 .profile-name p {
@@ -268,7 +269,6 @@ nav {
     width: 96%;
     padding-left: 15px;
     /* padding: 5px; */
-
 }
 
 .profile-name h1 {
@@ -298,6 +298,7 @@ nav {
     width: 100%;
     border-radius: 10px;
     margin: 10%;
+    z-index: 1;
 }
 
 .jojologo {
@@ -314,8 +315,8 @@ nav {
     width: 100%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    mask-image: linear-gradient(to top, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%);
+    mask-image: linear-gradient(to top, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to top, black 50%, transparent 100%);
 }
 
 .dio {
@@ -366,8 +367,8 @@ nav {
 
 .heading {
     overflow-y: scroll;
-    height: 100%;
-    border: 1px solid black;
+    height: 64%;
+    /* border: 1px solid black; */
 }
 
 .heading p {
@@ -379,4 +380,42 @@ nav {
     border-radius: 10px;
     margin: 10px;
     font-family: "Rowdies", sans-serif;
+}
+
+.heading ul {
+    margin: 27px 5%;
+    width: 90%;
+    list-style: none;
+    /* color: #414244; */
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    /* font-family: "Rowdies", sans-serif; */
+    font-family: "Sour Gummy", sans-serif;
+    /* font-family: "Space Grotesk", sans-serif; */
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    gap: 22px;
+}
+
+.menance {
+    position: absolute;
+    top: 25%;
+    right: 20px;
+    height: 50%;
+    width: 50%;
+    /* z-index: 0; */
+}
+
+.menance1 {
+    position: absolute;
+    bottom: 13%;
+    left: 5px;
+    height: 30%;
+    width: 30%;
+    z-index: 2;
 }
