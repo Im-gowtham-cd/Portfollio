@@ -790,7 +790,7 @@ nav {
     /* margin-left: 20px; */
     color: #ffffff;
     border: 2px solid #ffffff;
-    padding: 20px 82.1px;
+    padding: 20px 65px;
 }
 
 .herolink .getstarted {
@@ -799,7 +799,7 @@ nav {
     text-decoration: none;
     background: white;
     color: #e73c4e;
-    padding: 20px 82px;
+    padding: 20px 65px;
     border: 2.3px solid white;
     /* margin-right: 20px; */
 }
