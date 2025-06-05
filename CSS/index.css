@@ -36,9 +36,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 1% 5px;
-    height: 50px;
+    /* margin: 10px 1% 5px; */
+    height: 60px;
+    width: 100%;
     color: white;
+    background: #e73c4e;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    /* border: 1px solid white; */
+    /* border-radius: 10px; */
+    /* background: linear-gradient(to right, #ffffff, #e3e1e1, #ffffff); */
+    /* box-shadow: white 1px 5px 10px; */
 }
 
 .nav-logo img {
@@ -542,13 +551,14 @@ nav {
 }
 
 .herosection {
-    height: 90%;
-    margin: 1%;
-    width: 98%;
+    /* margin-top: 50%; */
+    height: 100%;
+    /* margin: 1%; */
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
 }
 
 #p1 {
@@ -561,6 +571,7 @@ nav {
     animation: p1 30s infinite;
     background: white;
     padding: 15px;
+    padding-bottom: 60px;
 }
 
 #p2 {
@@ -574,12 +585,14 @@ nav {
     position: absolute;
     animation: p2 30s infinite;
     background: white;
+    padding-bottom: 60px;
 }
 
 #p3 {
     transform: rotate(5deg);
     height: 25%;
     padding: 15px;
+    padding-bottom: 60px;
     background: white;
     width: 15%;
     bottom: 250px;
@@ -734,6 +747,7 @@ nav {
         height: 100%;
         margin-left: 15%;
         width: 96%;
+        margin-top: 15%;
     }
 
     #p1, #p2, #p3 {
