@@ -864,3 +864,55 @@ nav {
         text-align: center;
     }
 }
+
+/* Add at the end of your CSS file */
+
+/* Initial state for GSAP animations */
+.gsap-reveal {
+    visibility: hidden;
+}
+
+/* Attack effect animation */
+@keyframes menacing {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(-5deg); }
+    50% { transform: scale(1) rotate(0deg); }
+    75% { transform: scale(1.1) rotate(5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+.attack-effect {
+    animation: menacing 0.5s ease-in-out;
+    font-family: "Rowdies", sans-serif;
+}
+
+/* Improve hover effects with transitions */
+.nav-center ul li a,
+.herolink a,
+.content .last img {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Add subtle parallax effect to background elements */
+.jojoplace {
+    transition: transform 0.5s ease-out;
+}
+
+/* Enhance scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e73c4e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d32f3f;
+}
