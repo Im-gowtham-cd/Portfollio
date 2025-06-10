@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Unbounded:wght@200..900&display=swap');
 
 * {
     margin: 0;
@@ -23,8 +23,306 @@ body {
     /* font-family: "Sour Gummy", sans-serif; */
     /* font-family: "Space Grotesk", sans-serif; */
     /* font-family: "Rowdies", sans-serif; */
+    /* font-family: "Unbounded", sans-serif; */
     /* background: linear-gradient(135deg, #e73c4e 0%, #d32f3f 100%); */
     background: #e73c4e;
     height: 100vh;
-    width: 99vw;
+    /* width: 99vw; */
+}
+
+
+
+nav {
+    font-family: "Rowdies", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px 1% 5px; */
+    height: 60px;
+    width: 100%;
+    color: white;
+    background: #e73c4e;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    /* border: 1px solid white; */
+    /* border-radius: 10px; */
+    /* background: linear-gradient(to right, #ffffff, #e3e1e1, #ffffff); */
+    /* box-shadow: white 1px 5px 10px; */
+}
+
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-content {
+    background: linear-gradient(to right, #ffffff, #e3e1e1, #ffffff);
+    color: #e73c4e;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 1px;
+    align-items: center;
+    padding: 10px 100px;
+    clip-path: polygon(0px 0px, 100% 0, 325px 60px, 70px 60px);
+}
+
+.nav-content p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 900;
+    width: 200px;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.nav-center ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-center ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-center ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-center ul li a:hover {
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-setting i {
+    font-size: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        margin: 5px 2%;
+    }
+
+    .nav-content {
+        padding: 10px 50px;
+        clip-path: polygon(0px 0px, 100% 0, 225px 60px, 50px 60px);
+    }
+
+    .nav-content p {
+        font-size: 20px;
+        width: 150px;
+    }
+
+    .nav-center {
+        width: 50%;
+    }
+
+    .nav-center ul li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    body{
+        width: 100vw;
+    }
+
+    nav {
+        flex-direction: row;
+        height: auto;
+        /* margin: ; */
+        gap: 10px;
+    }
+
+    .nav-content {
+        padding: 5px 30px;
+        clip-path: polygon(0px 0px, 100% 0, 60px 60px, 70px 40px);
+        /* display: block; */
+    }
+
+    .nav-content p {
+        font-size: 18px;
+        width: 120px;
+    }
+
+    .nav-center {
+        width: 100%;
+        /* display: none; */
+    }
+
+    .nav-center ul {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    .nav-center ul li {
+        width: 100%;
+        height: 40px;
+    }
+
+    .nav-center ul li a {
+        font-size: 16px;
+    }
+
+    .nav-setting {
+        margin-top: 0px;
+    }
+
+    .nav-setting i {
+        font-size: 40px;
+    }
+}
+
+.contactbar{
+    font-family: "Unbounded", sans-serif;
+    height: 100vh;
+    border: 1px solid transparent;
+    /* margin-top: 60px; */
+}
+
+.chead{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 7%;
+    font-size: 30px;
+    /* border: 1px solid white; */
+    font-weight: 900;
+    color: white;
+}
+
+.chead p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ccards{
+    height: 70%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    /* padding: 20px 0px; */
+}
+
+.card{
+    height: 355px;
+    width: 300px;
+    border-top: 15px solid #ff8812;
+    background: #ffffff;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 1px 2px #ffffff; */
+}
+
+.card p:first-child{
+    margin-top: 25px;
+    color: #e73c4e;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.card p:nth-child(2){
+    margin: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #767070;
+    text-align: justify;
+}
+
+.card button{
+    margin: 25px;
+    color: #ff8812;
+    font-size: 25px;
+    font-weight: 1000;
+    width: 84%;
+    padding: 10px 20px;
+    border: 1px solid #ff8812;
+    border-radius: 50px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 8%;
+}
+
+.last a{
+    text-decoration: none;
+    color: #e73c4e;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.last a img{
+    height: 10%;
+    width: 10%;
+}
+
+@media screen and (max-width: 767px)  {
+    .chead{
+        margin-top: 20%;
+        font-size: 20px;
+    }
+
+    .ccards{
+        height: 70%;
+        gap: 20px;
+    }
+
+    .last a img{
+        height: 35%;
+        width: 40%;
+    }
+
 }
