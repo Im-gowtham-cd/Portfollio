@@ -207,9 +207,10 @@ nav {
 
 .contactbar{
     font-family: "Unbounded", sans-serif;
-    height: 100vh;
+    height: 90%;
     border: 1px solid transparent;
     /* margin-top: 60px; */
+    overflow-y: scroll;
 }
 
 .chead{
@@ -219,7 +220,7 @@ nav {
     align-items: center;
     height: 20%;
     width: 100%;
-    margin-top: 7%;
+    margin-top: 5%;
     font-size: 30px;
     /* border: 1px solid white; */
     font-weight: 900;
@@ -257,6 +258,22 @@ nav {
     /* box-shadow: 0 0 1px 2px #ffffff; */
 }
 
+.card:hover{
+    height: 355px;
+    width: 300px;
+    border-top: 15px solid #ff8812;
+    background: #ffffff;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 0 0 109px 10px #ff8812;
+    transition: all 0.1s ease-in-out;    
+}
+
 .card p:first-child{
     margin-top: 25px;
     color: #e73c4e;
@@ -286,12 +303,29 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
+.card button:hover{
+    margin: 25px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 1000;
+    width: 84%;
+    padding: 10px 20px;
+    border: 1px solid #ff8812;
+    border-radius: 50px;
+    background: #ff8812;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px #ff8812;
+}
+
 .last{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
     height: 8%;
+    position: fixed;
+    bottom: 1px;
 }
 
 .last a{
