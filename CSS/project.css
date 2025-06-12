@@ -44,7 +44,7 @@ nav {
     width: 100%;
     color: white;
     background: #e73c4e;
-    position: fixed;
+    position: sticky;
     top: 0px;
     z-index: 1000;
     /* border: 1px solid white; */
@@ -208,6 +208,359 @@ nav {
 }
 
 .content{
-    font-family: "Rubik Vinyl", system-ui;
     color: #ffffff;
+    /* border: 1px solid white; */
+    height: 90%;
+    /* margin-top: 60px; */
+    font-family: "Unbounded", sans-serif;
+
+}
+
+.projecthead{
+    margin-top: 2%;
+    /* border: 1px solid white; */
+    height:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projecthead h1{
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.projecthead p{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.project{
+    /* border: 1px solid white; */
+    height: 78%;
+    overflow-y: scroll;
+    display: flex;
+    /* margin-top: 2%; */
+}
+
+.projectleft{
+    /* border: 1px solid white; */
+    height: 800px;
+    width: 740px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.projectright{
+    /* border: 1px solid white; */
+    height: 800px;
+    width: 47.5%;
+}
+
+.projectmid{
+    /* border: 1px solid white; */
+    height: 800px;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* overflow-y: scroll; */
+}
+
+.projectmid .point{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-top: 100px; */
+}
+
+.projectmid .point i{
+    font-size: 30px;
+    margin-top: 20px;
+    height: 250px;
+    z-index: 100;
+    position: relative;
+    top: 130px;
+}
+
+.projectmid .point .line{
+    display: none;
+    height: 500px;
+    /* margin-top: 5%; */
+    gap: 2px;
+    width: 12%;
+    background-color: #ffffff;
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.projectcontainer{
+    height: 250px;
+    width: 100%;
+    margin-top: 3%;
+    border: 1px solid white;
+    background: #ffffff;
+    color: #e73c4e;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: space-between;
+    padding: 2% 0;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.date{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.name{
+    font-size: 45px;
+    font-weight: 900;
+    font-family: "Londrina Solid", sans-serif;
+}
+
+.status #not{
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #0c8f2d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status #yep{
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #e73c4e;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.projectcontainer a{
+    color: #e73c4e;
+    font-size: 20px;
+}
+
+.projectcontainerright{
+    margin-top: 160px;
+    height: 250px;
+    width: 100%;
+    border: 1px solid white;
+    background: #ffffff;
+    color: #e73c4e;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    padding: 2% 0;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.projectcontainerright .date, #yep, .name, a{
+    margin-right: 10px;
+}
+
+.projectcontainerright a{
+    color: #e73c4e;
+    font-size: 20px;
+}
+
+.projectcontainer:nth-child(2){
+    margin-top: 130px;
+}
+
+.projectcontainer:nth-child(3){
+    margin-top: 130px;
+}
+
+.projectcontainerright:nth-child(2){
+    margin-top: 130px;
+}
+
+.projectcontainerright:nth-child(3){
+    margin-top: 120px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .projectmid {
+        display: flex;
+    }
+    .projecthead h1 {
+        font-size: 58px;
+    }
+    .projecthead p {
+        font-size: 18px;
+    }
+    .name {
+        font-size: 40px;
+    }
+    .date {
+        font-size: 14px;
+    }
+    .status #not, .status #yep {
+        font-size: 22px;
+    }
+    .projectcontainer a, .projectcontainerright a {
+        font-size: 18px;
+    }
+    .project {
+        height: 78%;
+        width: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .projectleft {
+        height: fit-content;
+        width: 47.5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectright {
+        height: fit-content;
+        width: 47.5%;
+    }
+    .projectcontainer, .projectcontainerright {
+        width: 98%;
+        justify-content: space-evenly;
+        margin: 1%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .projectmid {
+        display: flex;
+    }
+    .projecthead h1 {
+        font-size: 52px;
+    }
+    .projecthead p {
+        font-size: 17px;
+    }
+    .name {
+        font-size: 35px;
+    }
+    .date {
+        font-size: 13px;
+    }
+    .status #not, .status #yep {
+        font-size: 20px;
+    }
+    .projectcontainer, .projectcontainerright {
+        height: 220px;
+        width: 98%;
+        justify-content: space-evenly;
+        margin: 1%;
+    }
+    .project {
+        height: 78%;
+        width: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .projectleft {
+        height: fit-content;
+        width: 47.5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectright {
+        height: fit-content;
+        width: 47.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectmid{
+        display: none;
+    }
+    .projecthead h1 {
+        font-size: 45px;
+    }
+    .projecthead p {
+        font-size: 16px;
+    }
+    .name {
+        font-size: 32px;
+    }
+    .date {
+        font-size: 12px;
+    }
+    .status #not, .status #yep {
+        font-size: 18px;
+    }
+    .projectcontainer, .projectcontainerright {
+        height: 200px;
+        margin-top: 10px;
+    }
+    .projectcontainer a, .projectcontainerright a {
+        font-size: 16px;
+    }
+    .project{
+        /* border: 1px solid white; */
+        height: 78%;
+        width: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* margin-top: 2%; */
+    }
+    
+    .projectleft{
+        /* border: 1px solid white; */
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* justify-content: baseline; */
+    }
+    .projectright{
+        /* border: 1px solid white; */
+        height: fit-content;
+        width: 100%;
+    }
+
+    .projectcontainer, .projectcontainerright{
+        width: 98%;
+        justify-content: space-evenly;
+        margin: 1%;
+    }
+
+    .projectcontainer:nth-child(2){
+        margin-top: 16px;
+    }
+    
+    .projectcontainer:nth-child(3){
+        margin-top: 16px;
+    }
+    
+    .projectcontainerright:nth-child(2){
+        margin-top: 16px;
+    }
+    
+    .projectcontainerright:nth-child(3){
+        margin-top: 16px;
+    }
 }
