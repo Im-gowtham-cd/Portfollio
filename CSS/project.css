@@ -291,15 +291,15 @@ nav {
 }
 
 .projectmid .point .line{
-    display: none;
-    height: 500px;
+    /* display: none; */
+    height: 250px;
     /* margin-top: 5%; */
-    gap: 2px;
+    /* gap: 2px; */
     width: 12%;
     background-color: #ffffff;
     /* border: 1px solid white; */
     position: absolute;
-    top: 40%;
+    top: 11%;
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
@@ -508,13 +508,16 @@ nav {
     .status #not, .status #yep {
         font-size: 18px;
     }
+
     .projectcontainer, .projectcontainerright {
         height: 200px;
         margin-top: 10px;
     }
+
     .projectcontainer a, .projectcontainerright a {
         font-size: 16px;
     }
+
     .project{
         /* border: 1px solid white; */
         height: 78%;
@@ -536,6 +539,7 @@ nav {
         flex-wrap: wrap;
         /* justify-content: baseline; */
     }
+
     .projectright{
         /* border: 1px solid white; */
         height: fit-content;
