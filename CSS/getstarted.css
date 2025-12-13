@@ -28,7 +28,7 @@ body {
     /* font-family: "Unbounded", sans-serif; */
     /* background: linear-gradient(135deg, #e73c4e 0%, #d32f3f 100%); */
     background: #e73c4e;
-    height: 100vh;
+    height: 400vh;
     /* width: 99vw; */
 }
 
@@ -208,7 +208,7 @@ nav {
 }
 
 .content{
-    height: 90%;
+    height: 100%;
     width: 100%;
     border: 1px solid white;
     font-family: "Rowdies", sans-serif;
@@ -243,4 +243,23 @@ nav {
     font-weight: 800;
     /* border: 1px solid white; */
     /* height: fi; */
+}
+
+.kira-dialogue{
+    /* margin-top: 30px; */
+    height: 19%;
+    width: 100%;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    /* height: fi; */
+    position: relative;
+    /* background: linear-gradient(to right,  white, #e73c4e); */
+}
+
+.kira-dialogue img{
+    height: 90%;
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
 }

@@ -3,8 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    scrollbar-width: none;
-    --webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -20,21 +20,18 @@ html {
 }
 
 body {
-    /* font-family: "Sour Gummy", sans-serif; */
-    /* font-family: "Space Grotesk", sans-serif; */
-    /* font-family: "Rowdies", sans-serif; */
-    /* background: linear-gradient(135deg, #e73c4e 0%, #d32f3f 100%); */
     background: #e73c4e;
     height: 100vh;
-    /* width: 99vw; */
+    /* width: 100%; */
+    /* overflow-x: hidden; */
 }
-
 
 
 nav {
     font-family: "Rowdies", sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 200px;
     align-items: center;
     /* margin: 10px 1% 5px; */
     height: 60px;
@@ -152,8 +149,8 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-    
-    body{
+
+    body {
         width: 100vw;
     }
 
@@ -497,7 +494,7 @@ nav {
     overflow-y: scroll;
     height: 64%;
     /* border: 1px solid black; */
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
     scroll-behavior: smooth;
 }
 
@@ -566,7 +563,7 @@ nav {
     width: 15%;
     bottom: 400px;
     right: 355px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: absolute;
     animation: p1 30s infinite;
     background: white;
@@ -581,10 +578,11 @@ nav {
     right: 305px;
     transform: rotate(-10deg);
     bottom: 60px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: absolute;
     animation: p2 30s infinite;
     background: white;
+    overflow: hidden;
     padding-bottom: 60px;
 }
 
@@ -597,7 +595,7 @@ nav {
     width: 15%;
     bottom: 250px;
     right: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: absolute;
     animation: p3 30s infinite;
 }
@@ -607,18 +605,22 @@ nav {
         transform: translateX(0) translateY(0) rotate(-5deg);
         animation-timing-function: ease-in-out;
     }
+
     25% {
         transform: translateX(30px) translateY(0px) rotate(3deg);
         animation-timing-function: ease-in-out;
     }
+
     50% {
         transform: translateX(60px) translateY(0) rotate(-2deg);
         animation-timing-function: ease-in-out;
     }
+
     75% {
         transform: translateX(30px) translateY(0px) rotate(3deg);
         animation-timing-function: ease-in-out;
     }
+
     100% {
         transform: translateX(0) translateY(0) rotate(-5deg);
         animation-timing-function: ease-in-out;
@@ -630,14 +632,17 @@ nav {
         transform: translateX(0) translateY(0) rotate(-10deg);
         animation-timing-function: ease-in-out;
     }
+
     33% {
         transform: translateX(-40px) translateY(30px) rotate(-5deg);
         animation-timing-function: ease-in-out;
     }
+
     66% {
         transform: translateX(40px) translateY(30px) rotate(-15deg);
         animation-timing-function: ease-in-out;
     }
+
     100% {
         transform: translateX(0) translateY(0) rotate(-10deg);
         animation-timing-function: ease-in-out;
@@ -649,18 +654,22 @@ nav {
         transform: translateX(0) translateY(0) rotate(5deg);
         animation-timing-function: ease-in-out;
     }
+
     25% {
         transform: translateX(-50px) translateY(-50px) rotate(2deg);
         animation-timing-function: ease-in-out;
     }
+
     50% {
         transform: translateX(-100px) translateY(-25px) rotate(-2deg);
         animation-timing-function: ease-in-out;
     }
+
     75% {
         transform: translateX(-50px) translateY(25px) rotate(2deg);
         animation-timing-function: ease-in-out;
     }
+
     100% {
         transform: translateX(0) translateY(0) rotate(5deg);
         animation-timing-function: ease-in-out;
@@ -689,23 +698,32 @@ nav {
 .heroname .herotext {
     color: white;
     font-size: 95px;
-    font-family: "Rowdies", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    /* font-family: "Sour Gummy", sans-serif; */
+    /* font-family: "Space Grotesk", sans-serif; */
+    /* font-family: "Rowdies", sans-serif; */
 }
 
 @keyframes name {
     0% {
         width: 0px;
     }
+
     50% {
         width: 600px;
     }
+
     100% {
         width: 0px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    #p1, #p2, #p3 {
+
+    #p1,
+    #p2,
+    #p3 {
         height: 25%;
         width: 15%;
         padding: 10px;
@@ -750,7 +768,9 @@ nav {
         margin-top: 15%;
     }
 
-    #p1, #p2, #p3 {
+    #p1,
+    #p2,
+    #p3 {
         position: relative;
         height: 35%;
         width: 30%;
@@ -865,20 +885,30 @@ nav {
     }
 }
 
-/* Add at the end of your CSS file */
-
-/* Initial state for GSAP animations */
 .gsap-reveal {
     visibility: hidden;
 }
 
-/* Attack effect animation */
 @keyframes menacing {
-    0% { transform: scale(1) rotate(0deg); }
-    25% { transform: scale(1.1) rotate(-5deg); }
-    50% { transform: scale(1) rotate(0deg); }
-    75% { transform: scale(1.1) rotate(5deg); }
-    100% { transform: scale(1) rotate(0deg); }
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.1) rotate(-5deg);
+    }
+
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .attack-effect {
@@ -886,33 +916,51 @@ nav {
     font-family: "Rowdies", sans-serif;
 }
 
-/* Improve hover effects with transitions */
 .nav-center ul li a,
 .herolink a,
 .content .last img {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Add subtle parallax effect to background elements */
 .jojoplace {
     transition: transform 0.5s ease-out;
 }
 
-/* Enhance scrollbar styling for webkit browsers */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
+    /* background-color: black; */
+    min-height: 1px;
+    height: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgb(255, 174, 0); */
     border-radius: 10px;
+    color: #ffb302;
+    margin: 20px;
+    min-height: 1px;
+    height: 10px;
+
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e73c4e;
+    background: linear-gradient(45deg, #f5d100, #ffb302);
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    min-height: 1px;
+    height: 10px;
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #d32f3f;
+    background: linear-gradient(45deg, #d32f3f, #c12535);
+    /* background: linear-gradient(90deg, #0083f5, #064389); */
+    /* transform: scale(1.1); */
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+}
+
+.heading {
+    /* scrollbar-width: 20px; */
+    scrollbar-color: #e73c4e rgba(255, 255, 255, 0.15);
 }

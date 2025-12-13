@@ -307,7 +307,8 @@ nav {
 
 .projectcontainer{
     height: 250px;
-    width: 100%;
+    width: 90%;
+    margin-left: 10%;
     margin-top: 3%;
     border: 1px solid white;
     background: #ffffff;
@@ -317,7 +318,7 @@ nav {
     align-items: first baseline;
     justify-content: space-between;
     padding: 2% 0;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     border-radius: 10px;
 }
 
@@ -359,7 +360,7 @@ nav {
 .projectcontainerright{
     margin-top: 160px;
     height: 250px;
-    width: 100%;
+    width: 90%;
     border: 1px solid white;
     background: #ffffff;
     color: #e73c4e;
@@ -368,7 +369,7 @@ nav {
     align-items: end;
     justify-content: space-between;
     padding: 2% 0;
-    margin-right: 50px;
+    margin-right: 10%;
     border-radius: 10px;
 }
 
