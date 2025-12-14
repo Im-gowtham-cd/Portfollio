@@ -35,7 +35,8 @@ body {
 nav {
     font-family: "Rowdies", sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 200px;
     align-items: center;
     /* margin: 10px 1% 5px; */
     height: 60px;
@@ -153,8 +154,8 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-    
-    body{
+
+    body {
         width: 100vw;
     }
 
@@ -205,7 +206,7 @@ nav {
     }
 }
 
-.contactbar{
+.contactbar {
     font-family: "Unbounded", sans-serif;
     height: 90%;
     border: 1px solid transparent;
@@ -213,7 +214,7 @@ nav {
     overflow-y: scroll;
 }
 
-.chead{
+.chead {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -227,12 +228,12 @@ nav {
     color: white;
 }
 
-.chead p{
+.chead p {
     font-size: 20px;
     font-weight: 400;
 }
 
-.ccards{
+.ccards {
     height: 70%;
     /* border: 1px solid white; */
     display: flex;
@@ -244,7 +245,7 @@ nav {
     /* padding: 20px 0px; */
 }
 
-.card{
+.card {
     height: 355px;
     width: 300px;
     border-top: 15px solid #ff8812;
@@ -258,7 +259,7 @@ nav {
     /* box-shadow: 0 0 1px 2px #ffffff; */
 }
 
-.card:hover{
+.card:hover {
     height: 355px;
     width: 300px;
     border-top: 15px solid #ff8812;
@@ -271,17 +272,17 @@ nav {
     border-radius: 10px;
     transform: scale(1.1);
     box-shadow: 0 0 109px 10px #ff8812;
-    transition: all 0.1s ease-in-out;    
+    transition: all 0.1s ease-in-out;
 }
 
-.card p:first-child{
+.card p:first-child {
     margin-top: 25px;
     color: #e73c4e;
     font-size: 40px;
     font-weight: 900;
 }
 
-.card p:nth-child(2){
+.card p:nth-child(2) {
     margin: 25px;
     font-size: 15px;
     font-weight: 400;
@@ -289,7 +290,7 @@ nav {
     text-align: justify;
 }
 
-.card button{
+.card button {
     margin: 25px;
     color: #ff8812;
     font-size: 25px;
@@ -303,7 +304,7 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
-.card button:hover{
+.card button:hover {
     margin: 25px;
     color: #ffffff;
     font-size: 25px;
@@ -318,7 +319,7 @@ nav {
     box-shadow: 0px 0px 10px 0px #ff8812;
 }
 
-.last{
+.last {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -328,7 +329,7 @@ nav {
     bottom: 1px;
 }
 
-.last a{
+.last a {
     text-decoration: none;
     color: #e73c4e;
     font-size: 20px;
@@ -338,23 +339,23 @@ nav {
     justify-content: space-around;
 }
 
-.last a img{
+.last a img {
     height: 10%;
     width: 10%;
 }
 
-@media screen and (max-width: 767px)  {
-    .chead{
+@media screen and (max-width: 767px) {
+    .chead {
         margin-top: 20%;
         font-size: 20px;
     }
 
-    .ccards{
+    .ccards {
         height: 70%;
         gap: 20px;
     }
 
-    .last a img{
+    .last a img {
         height: 35%;
         width: 40%;
     }

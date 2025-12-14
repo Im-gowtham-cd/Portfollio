@@ -37,7 +37,8 @@ body {
 nav {
     font-family: "Rowdies", sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 200px;
     align-items: center;
     /* margin: 10px 1% 5px; */
     height: 60px;
@@ -155,8 +156,8 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-    
-    body{
+
+    body {
         width: 100vw;
     }
 
@@ -207,7 +208,7 @@ nav {
     }
 }
 
-.content{
+.content {
     color: #ffffff;
     /* border: 1px solid white; */
     height: 90%;
@@ -216,27 +217,27 @@ nav {
 
 }
 
-.projecthead{
+.projecthead {
     margin-top: 2%;
     /* border: 1px solid white; */
-    height:15%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.projecthead h1{
+.projecthead h1 {
     font-size: 65px;
     font-weight: 900;
 }
 
-.projecthead p{
+.projecthead p {
     font-size: 20px;
     font-weight: 900;
 }
 
-.project{
+.project {
     /* border: 1px solid white; */
     height: 78%;
     overflow-y: scroll;
@@ -244,7 +245,7 @@ nav {
     /* margin-top: 2%; */
 }
 
-.projectleft{
+.projectleft {
     /* border: 1px solid white; */
     height: 800px;
     width: 740px;
@@ -252,13 +253,14 @@ nav {
     /* flex-direction: column; */
     flex-wrap: wrap;
 }
-.projectright{
+
+.projectright {
     /* border: 1px solid white; */
     height: 800px;
     width: 47.5%;
 }
 
-.projectmid{
+.projectmid {
     /* border: 1px solid white; */
     height: 800px;
     width: 5%;
@@ -269,7 +271,7 @@ nav {
     /* overflow-y: scroll; */
 }
 
-.projectmid .point{
+.projectmid .point {
     height: 500px;
     width: 100%;
     /* border: 1px solid white; */
@@ -281,7 +283,7 @@ nav {
     /* margin-top: 100px; */
 }
 
-.projectmid .point i{
+.projectmid .point i {
     font-size: 30px;
     margin-top: 20px;
     height: 250px;
@@ -290,7 +292,7 @@ nav {
     top: 130px;
 }
 
-.projectmid .point .line{
+.projectmid .point .line {
     /* display: none; */
     height: 250px;
     /* margin-top: 5%; */
@@ -305,7 +307,7 @@ nav {
     transform: translate(-50%, -50%);
 }
 
-.projectcontainer{
+.projectcontainer {
     height: 250px;
     width: 90%;
     margin-left: 10%;
@@ -322,19 +324,19 @@ nav {
     border-radius: 10px;
 }
 
-.date{
+.date {
     font-size: 15px;
     font-weight: 600;
     margin-left: 15px;
 }
 
-.name{
+.name {
     font-size: 45px;
     font-weight: 900;
     font-family: "Londrina Solid", sans-serif;
 }
 
-.status #not{
+.status #not {
     font-size: 25px;
     font-weight: 900;
     background-color: #0c8f2d;
@@ -343,7 +345,7 @@ nav {
     border-radius: 5px;
 }
 
-.status #yep{
+.status #yep {
     font-size: 25px;
     font-weight: 900;
     background-color: #e73c4e;
@@ -352,12 +354,12 @@ nav {
     border-radius: 5px;
 }
 
-.projectcontainer a{
+.projectcontainer a {
     color: #e73c4e;
     font-size: 20px;
 }
 
-.projectcontainerright{
+.projectcontainerright {
     margin-top: 160px;
     height: 250px;
     width: 90%;
@@ -373,28 +375,31 @@ nav {
     border-radius: 10px;
 }
 
-.projectcontainerright .date, #yep, .name, a{
+.projectcontainerright .date,
+#yep,
+.name,
+a {
     margin-right: 10px;
 }
 
-.projectcontainerright a{
+.projectcontainerright a {
     color: #e73c4e;
     font-size: 20px;
 }
 
-.projectcontainer:nth-child(2){
+.projectcontainer:nth-child(2) {
     margin-top: 130px;
 }
 
-.projectcontainer:nth-child(3){
+.projectcontainer:nth-child(3) {
     margin-top: 130px;
 }
 
-.projectcontainerright:nth-child(2){
+.projectcontainerright:nth-child(2) {
     margin-top: 130px;
 }
 
-.projectcontainerright:nth-child(3){
+.projectcontainerright:nth-child(3) {
     margin-top: 120px;
 }
 
@@ -402,24 +407,33 @@ nav {
     .projectmid {
         display: flex;
     }
+
     .projecthead h1 {
         font-size: 58px;
     }
+
     .projecthead p {
         font-size: 18px;
     }
+
     .name {
         font-size: 40px;
     }
+
     .date {
         font-size: 14px;
     }
-    .status #not, .status #yep {
+
+    .status #not,
+    .status #yep {
         font-size: 22px;
     }
-    .projectcontainer a, .projectcontainerright a {
+
+    .projectcontainer a,
+    .projectcontainerright a {
         font-size: 18px;
     }
+
     .project {
         height: 78%;
         width: fit-content;
@@ -428,17 +442,21 @@ nav {
         align-items: center;
         flex-wrap: wrap;
     }
+
     .projectleft {
         height: fit-content;
         width: 47.5%;
         display: flex;
         flex-wrap: wrap;
     }
+
     .projectright {
         height: fit-content;
         width: 47.5%;
     }
-    .projectcontainer, .projectcontainerright {
+
+    .projectcontainer,
+    .projectcontainerright {
         width: 98%;
         justify-content: space-evenly;
         margin: 1%;
@@ -449,27 +467,36 @@ nav {
     .projectmid {
         display: flex;
     }
+
     .projecthead h1 {
         font-size: 52px;
     }
+
     .projecthead p {
         font-size: 17px;
     }
+
     .name {
         font-size: 35px;
     }
+
     .date {
         font-size: 13px;
     }
-    .status #not, .status #yep {
+
+    .status #not,
+    .status #yep {
         font-size: 20px;
     }
-    .projectcontainer, .projectcontainerright {
+
+    .projectcontainer,
+    .projectcontainerright {
         height: 220px;
         width: 98%;
         justify-content: space-evenly;
         margin: 1%;
     }
+
     .project {
         height: 78%;
         width: fit-content;
@@ -478,12 +505,14 @@ nav {
         align-items: center;
         flex-wrap: wrap;
     }
+
     .projectleft {
         height: fit-content;
         width: 47.5%;
         display: flex;
         flex-wrap: wrap;
     }
+
     .projectright {
         height: fit-content;
         width: 47.5%;
@@ -491,35 +520,43 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    .projectmid{
+    .projectmid {
         display: none;
     }
+
     .projecthead h1 {
         font-size: 45px;
     }
+
     .projecthead p {
         font-size: 16px;
     }
+
     .name {
         font-size: 32px;
     }
+
     .date {
         font-size: 12px;
     }
-    .status #not, .status #yep {
+
+    .status #not,
+    .status #yep {
         font-size: 18px;
     }
 
-    .projectcontainer, .projectcontainerright {
+    .projectcontainer,
+    .projectcontainerright {
         height: 200px;
         margin-top: 10px;
     }
 
-    .projectcontainer a, .projectcontainerright a {
+    .projectcontainer a,
+    .projectcontainerright a {
         font-size: 16px;
     }
 
-    .project{
+    .project {
         /* border: 1px solid white; */
         height: 78%;
         width: fit-content;
@@ -530,8 +567,8 @@ nav {
         flex-wrap: wrap;
         /* margin-top: 2%; */
     }
-    
-    .projectleft{
+
+    .projectleft {
         /* border: 1px solid white; */
         height: fit-content;
         width: 100%;
@@ -541,31 +578,32 @@ nav {
         /* justify-content: baseline; */
     }
 
-    .projectright{
+    .projectright {
         /* border: 1px solid white; */
         height: fit-content;
         width: 100%;
     }
 
-    .projectcontainer, .projectcontainerright{
+    .projectcontainer,
+    .projectcontainerright {
         width: 98%;
         justify-content: space-evenly;
         margin: 1%;
     }
 
-    .projectcontainer:nth-child(2){
+    .projectcontainer:nth-child(2) {
         margin-top: 16px;
     }
-    
-    .projectcontainer:nth-child(3){
+
+    .projectcontainer:nth-child(3) {
         margin-top: 16px;
     }
-    
-    .projectcontainerright:nth-child(2){
+
+    .projectcontainerright:nth-child(2) {
         margin-top: 16px;
     }
-    
-    .projectcontainerright:nth-child(3){
+
+    .projectcontainerright:nth-child(3) {
         margin-top: 16px;
     }
 }
