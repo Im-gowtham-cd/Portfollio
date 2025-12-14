@@ -17,7 +17,7 @@
 <body>
     <nav>
         <div class="nav-logo">
-            <img src="../IMAGE/LOGO.webp" alt="">
+            <img src="../IMAGE/PFP.jpg" alt="">
         </div>
         <div class="nav-center">
             <ul class="left">
@@ -42,102 +42,90 @@
             <p>Explore my works</p>
         </div>
         <div class="project">
-            <div class="projectleft">
-                <div class="projectcontainer">
-                    <div class="date">
-                        From : January 10 2025 &nbsp;&nbsp; - &nbsp;&nbsp; March 10 2025
-                    </div>
-                    <div class="name">
-                        <h1>Project Name</h1>
-                    </div>
-                    <div class="status">
-                        <p id="not">Completed</p>
-                    </div>
-                    <a href="">Link</a>
-                </div>
-                <div class="projectcontainer">
-                    <div class="date">
-                        From : January 10 2025 &nbsp;&nbsp; - &nbsp;&nbsp; March 10 2025
-                    </div>
-                    <div class="name">
-                        <h1>Project Name</h1>
-                    </div>
-                    <div class="status">
-                        <p id="yep">Under Progress</p>
-                    </div>
-                    <a href="">Link</a>
-                </div>
-                <div class="projectcontainer">
-                    <div class="date">
-                        From : January 10 2025 &nbsp;&nbsp; - &nbsp;&nbsp; March 10 2025
-                    </div>
-                    <div class="name">
-                        <h1>Project Name</h1>
-                    </div>
-                    <div class="status">
-                        <p id="yep">Under Progress</p>
-                    </div>
-                    <a href="">Link</a>
-                </div>
-            </div>
+            <div class="projectleft" id="projectLeft"></div>
+
             <div class="projectmid">
+                <div class="point"><i class='bxr bx-shield-circle'></i></div>
                 <div class="point">
-                    <!-- <div class="line"></div> -->
-                    <i class='bxr  bx-shield-circle'></i>
+                    <div class="line"></div><i class='bxr bx-shield-circle'></i>
                 </div>
                 <div class="point">
-                    <div class="line"></div>
-                    <i class='bxr  bx-shield-circle'></i>
+                    <div class="line"></div><i class='bxr bx-shield-circle'></i>
                 </div>
                 <div class="point">
-                    <div class="line"></div>
-                    <i class='bxr  bx-shield-circle'></i>
-                </div>
-                <div class="point">
-                    <div class="line"></div>
-                    <i class='bxr  bx-shield-circle'></i>
+                    <div class="line"></div><i class='bxr bx-shield-circle'></i>
                 </div>
             </div>
-            <div class="projectright">
-                <div class="projectcontainerright">
-                    <div class="date">
-                        From : January 10 2025 &nbsp;&nbsp; - &nbsp;&nbsp; March 10 2025
-                    </div>
-                    <div class="name">
-                        <h1>Project Name</h1>
-                    </div>
-                    <div class="status">
-                        <p id="yep">Under Progress</p>
-                    </div>
-                    <a href="">Link</a>
-                </div>
-                <div class="projectcontainerright">
-                    <div class="date">
-                        From : January 10 2025 &nbsp;&nbsp; - &nbsp;&nbsp; March 10 2025
-                    </div>
-                    <div class="name">
-                        <h1>Project Name</h1>
-                    </div>
-                    <div class="status">
-                        <p id="not">Completed</p>
-                    </div>
-                    <a href="">Link</a>
-                </div>
-                <div class="projectcontainerright">
-                    <div class="date">
-                        From : January 10 2025 &nbsp;&nbsp; - &nbsp;&nbsp; March 10 2025
-                    </div>
-                    <div class="name">
-                        <h1>Project Name</h1>
-                    </div>
-                    <div class="status">
-                        <p id="not">Completed</p>
-                    </div>
-                    <a href="">Link</a>
-                </div>
-            </div>
+
+            <div class="projectright" id="projectRight"></div>
         </div>
+
     </div>
+
+    <script>
+        const projects = [
+            {
+                name: "YouTube UI Clone",
+                from: "January 10 2025",
+                to: "January 11 2025",
+                status: "Completed",
+                link: "#"
+            },
+            {
+                name: "Portfolio Website",
+                from: "January 15 2025",
+                to: "February 10 2025",
+                status: "Under Progress",
+                link: "#"
+            },
+            {
+                name: "E-commerce App",
+                from: "February 12 2025",
+                to: "March 10 2025",
+                status: "Under Progress",
+                link: "#"
+            },
+            {
+                name: "Chat Application",
+                from: "March 1 2025",
+                to: "March 20 2025",
+                status: "Completed",
+                link: "#"
+            }
+        ];
+
+        const leftContainer = document.getElementById("projectLeft");
+        const rightContainer = document.getElementById("projectRight");
+
+        projects.forEach((project, index) => {
+            const projectBox = document.createElement("div");
+            projectBox.className = index % 2 === 0
+                ? "projectcontainer"
+                : "projectcontainerright";
+
+            projectBox.innerHTML = `
+            <div class="date">
+                From : ${project.from} &nbsp;&nbsp; - &nbsp;&nbsp; ${project.to}
+            </div>
+            <div class="name">
+                <h1>${project.name}</h1>
+            </div>
+            <div class="status">
+                <p id="${project.status === 'Completed' ? 'not' : 'yep'}">
+                    ${project.status}
+                </p>
+            </div>
+            <a href="${project.link}" target="_blank">Link</a>
+        `;
+
+            if (index % 2 === 0) {
+                leftContainer.appendChild(projectBox);
+            } else {
+                rightContainer.appendChild(projectBox);
+            }
+        });
+    </script>
+
 </body>
 
 </html>
