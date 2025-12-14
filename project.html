@@ -2,64 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOWTHAM C D</title>
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/project.css">
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/project.css" />
 </head>
 
 <body>
+
     <nav>
         <div class="nav-logo">
-            <img src="../IMAGE/PFP.jpg" alt="">
+            <img src="../IMAGE/PFP.jpg" alt="Profile" />
         </div>
+
         <div class="nav-center">
             <ul class="left">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./index.html#about">ABOUT</a></li>
             </ul>
+
             <div class="nav-content">
                 <p>PROJECT</p>
             </div>
+
             <ul class="left">
                 <li><a href="./contact.html">CONTACT</a></li>
-                <li><a href="">PROJECT</a></li>
+                <li><a href="./project.html">PROJECT</a></li>
             </ul>
         </div>
+
         <div class="nav-setting">
-            <i class='bx bx-menu bx-lg'></i>
+            <i class="bx bx-menu bx-lg"></i>
         </div>
     </nav>
+
     <div class="content">
+
         <div class="projecthead">
-            <h1>Project</h1>
+            <h1>Projects</h1>
             <p>Explore my works</p>
         </div>
+
         <div class="project">
+
             <div class="projectleft" id="projectLeft"></div>
-
-            <div class="projectmid">
-                <div class="point"><i class='bxr bx-shield-circle'></i></div>
-                <div class="point">
-                    <div class="line"></div><i class='bxr bx-shield-circle'></i>
-                </div>
-                <div class="point">
-                    <div class="line"></div><i class='bxr bx-shield-circle'></i>
-                </div>
-                <div class="point">
-                    <div class="line"></div><i class='bxr bx-shield-circle'></i>
-                </div>
-            </div>
-
+            <div class="projectmid" id="projectMid"></div>
             <div class="projectright" id="projectRight"></div>
-        </div>
 
+        </div>
     </div>
 
     <script>
@@ -94,35 +92,44 @@
             }
         ];
 
-        const leftContainer = document.getElementById("projectLeft");
-        const rightContainer = document.getElementById("projectRight");
+        const left = document.getElementById("projectLeft");
+        const right = document.getElementById("projectRight");
+        const mid = document.getElementById("projectMid");
 
         projects.forEach((project, index) => {
-            const projectBox = document.createElement("div");
-            projectBox.className = index % 2 === 0
+
+            const card = document.createElement("div");
+            card.className = index % 2 === 0
                 ? "projectcontainer"
                 : "projectcontainerright";
 
-            projectBox.innerHTML = `
-            <div class="date">
-                From : ${project.from} &nbsp;&nbsp; - &nbsp;&nbsp; ${project.to}
-            </div>
-            <div class="name">
-                <h1>${project.name}</h1>
-            </div>
-            <div class="status">
-                <p id="${project.status === 'Completed' ? 'not' : 'yep'}">
-                    ${project.status}
-                </p>
-            </div>
-            <a href="${project.link}" target="_blank">Link</a>
-        `;
+            card.innerHTML = `
+                <div class="date">
+                    From : ${project.from} &nbsp;&nbsp; - &nbsp;&nbsp; ${project.to}
+                </div>
+                <div class="name">
+                    <h1>${project.name}</h1>
+                </div>
+                <div class="status">
+                    <p id="${project.status === 'Completed' ? 'not' : 'yep'}">
+                        ${project.status}
+                    </p>
+                </div>
+                <a href="${project.link}" target="_blank">Link</a>
+            `;
 
-            if (index % 2 === 0) {
-                leftContainer.appendChild(projectBox);
-            } else {
-                rightContainer.appendChild(projectBox);
+            index % 2 === 0 ? left.appendChild(card) : right.appendChild(card);
+
+            const point = document.createElement("div");
+            point.className = "point";
+            if (index < projects.length - 1) {
+                point.innerHTML = `
+                ${index !== 0 ? '<div class="line"></div>' : ''}
+                <i class='bxr bx-shield-circle'></i>
+            `;
+                mid.appendChild(point);
             }
+
         });
     </script>
 
