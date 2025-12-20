@@ -206,15 +206,16 @@ nav {
     /* justify-content: center; */
     align-items: center;
     height: 90%;
-    width: 98%;
+    width: 100%;
     /* border: 1px solid white; */
     margin: 1%;
     flex-wrap: wrap;
 }
 
 .content .left {
-    flex-basis: 450px;
+    flex-basis: 30%;
     height: 100%;
+    /* width: 35%; */
     /* border: 1px solid white; */
     display: flex;
     /* justify-content: space-around; */
@@ -253,8 +254,9 @@ nav {
 } */
 
 .content .right {
-    flex-basis: 960px;
+    flex-basis: 60%;
     height: 85%;
+    /* border: 1px solid white; */
     /* border-left: 1px solid #ffffff; */
     /* border-left:15px solid #ffe714; */
     border-radius: 10px;
@@ -271,9 +273,9 @@ nav {
 
 /* Default styles for all devices */
 .content .last {
-    width: 50px;
+    width: 3%;
     height: 85.5%;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -391,7 +393,7 @@ nav {
     /* background: #423ce7; */
     color: #e73c4e;
     background: white;
-    width: 96%;
+    width: 100%;
     padding-left: 15px;
     /* padding: 5px; */
 }
@@ -405,7 +407,7 @@ nav {
     background: #e73c4e;
     padding-left: 10px;
     /* padding-right: -10px; */
-    width: 97.5%;
+    width: 100%;
     font-size: 40px;
     font-weight: 1100;
     /* text-align: center; */
@@ -559,8 +561,8 @@ nav {
 }
 
 #p1 {
-    height: 25%;
-    width: 15%;
+    height: 300px;
+    width: 300px;
     bottom: 400px;
     right: 355px;
     /* border-radius: 10px; */
@@ -572,9 +574,9 @@ nav {
 }
 
 #p2 {
-    height: 25%;
+    height: 300px;
     padding: 15px;
-    width: 15%;
+    width: 300px;
     right: 305px;
     transform: rotate(-10deg);
     bottom: 60px;
@@ -588,11 +590,11 @@ nav {
 
 #p3 {
     transform: rotate(5deg);
-    height: 25%;
+    height: 300px;
     padding: 15px;
     padding-bottom: 60px;
     background: white;
-    width: 15%;
+    width: 300px;
     bottom: 250px;
     right: 10px;
     /* border-radius: 10px; */
@@ -602,17 +604,17 @@ nav {
 
 @keyframes p1 {
     0% {
-        transform: translateX(0) translateY(0) rotate(-5deg);
+        transform: translateX(-100px) translateY(0) rotate(-5deg);
         animation-timing-function: ease-in-out;
     }
 
     25% {
-        transform: translateX(30px) translateY(0px) rotate(3deg);
+        transform: translateX(-30px) translateY(0px) rotate(3deg);
         animation-timing-function: ease-in-out;
     }
 
     50% {
-        transform: translateX(60px) translateY(0) rotate(-2deg);
+        transform: translateX(0px) translateY(0) rotate(-2deg);
         animation-timing-function: ease-in-out;
     }
 
@@ -622,7 +624,7 @@ nav {
     }
 
     100% {
-        transform: translateX(0) translateY(0) rotate(-5deg);
+        transform: translateX(100) translateY(0) rotate(-5deg);
         animation-timing-function: ease-in-out;
     }
 }
@@ -651,7 +653,7 @@ nav {
 
 @keyframes p3 {
     0% {
-        transform: translateX(0) translateY(0) rotate(5deg);
+        transform: translateX(-100) translateY(0) rotate(5deg);
         animation-timing-function: ease-in-out;
     }
 
@@ -661,17 +663,17 @@ nav {
     }
 
     50% {
-        transform: translateX(-100px) translateY(-25px) rotate(-2deg);
+        transform: translateX(0) translateY(-25px) rotate(-2deg);
         animation-timing-function: ease-in-out;
     }
 
     75% {
-        transform: translateX(-50px) translateY(25px) rotate(2deg);
+        transform: translateX(10px) translateY(25px) rotate(2deg);
         animation-timing-function: ease-in-out;
     }
 
     100% {
-        transform: translateX(0) translateY(0) rotate(5deg);
+        transform: translateX(0x) translateY(0) rotate(5deg);
         animation-timing-function: ease-in-out;
     }
 }
@@ -835,6 +837,7 @@ nav {
     color: white;
     font-size: 20px;
     font-family: "Rowdies", sans-serif;
+    border-radius: 50px;
     text-decoration: none;
     /* margin-left: 20px; */
     color: #ffffff;
@@ -848,6 +851,7 @@ nav {
     text-decoration: none;
     background: white;
     color: #e73c4e;
+    border-radius: 50px;
     padding: 20px 65px;
     border: 2.3px solid white;
     /* margin-right: 20px; */
