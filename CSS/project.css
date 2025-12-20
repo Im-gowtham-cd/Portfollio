@@ -240,6 +240,9 @@ nav {
 .project {
     /* border: 1px solid white; */
     height: 78%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     overflow-y: scroll;
     display: flex;
     /* margin-top: 2%; */
@@ -248,7 +251,7 @@ nav {
 .projectleft {
     /* border: 1px solid white; */
     height: 800px;
-    width: 740px;
+    width: 40%;
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
@@ -257,7 +260,7 @@ nav {
 .projectright {
     /* border: 1px solid white; */
     height: 800px;
-    width: 47.5%;
+    width: 40%;
 }
 
 .projectmid {
@@ -311,7 +314,7 @@ nav {
     height: 250px;
     width: 90%;
     margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 10%;
     border: 1px solid white;
     background: #ffffff;
     color: #e73c4e;

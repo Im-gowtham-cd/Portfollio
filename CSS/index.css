@@ -561,8 +561,8 @@ nav {
 }
 
 #p1 {
-    height: 300px;
-    width: 300px;
+    height: 25%;
+    width: 15%;
     bottom: 400px;
     right: 355px;
     /* border-radius: 10px; */
@@ -570,13 +570,13 @@ nav {
     animation: p1 30s infinite;
     background: white;
     padding: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 3%;
 }
 
 #p2 {
-    height: 300px;
+    height: 25%;
     padding: 15px;
-    width: 300px;
+    width: 15%;
     right: 305px;
     transform: rotate(-10deg);
     bottom: 60px;
@@ -585,16 +585,16 @@ nav {
     animation: p2 30s infinite;
     background: white;
     overflow: hidden;
-    padding-bottom: 60px;
+    padding-bottom: 3%;
 }
 
 #p3 {
     transform: rotate(5deg);
-    height: 300px;
+    height: 25%;
     padding: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 3%;
     background: white;
-    width: 300px;
+    width: 15%;
     bottom: 250px;
     right: 10px;
     /* border-radius: 10px; */
