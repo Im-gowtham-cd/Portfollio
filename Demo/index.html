@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOWTHAM C D — Portfolio</title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-letters">
+                <span>G</span><span>O</span><span>W</span><span>T</span><span>H</span><span>A</span><span>M</span>
+            </div>
+            <div class="loader-bar-wrap">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="nav-logo">
+            <img src="./IMAGE/PFP.jpg" alt="GCD">
+        </div>
+        <div class="nav-center">
+            <ul class="nav-links-left">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+            </ul>
+            <div class="nav-brand">
+                <span>PORTFOLIO</span>
+            </div>
+            <ul class="nav-links-right">
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="mob-link">HOME</a></li>
+            <li><a href="#about" class="mob-link">ABOUT</a></li>
+            <li><a href="#projects" class="mob-link">PROJECTS</a></li>
+            <li><a href="#contact" class="mob-link">CONTACT</a></li>
+        </ul>
+        <a href="./SOURCE/GOWTHAM C D.pdf" class="mob-cv" download>Download CV ↓</a>
+    </div>
+
+    <!-- ═══════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-deco-line hero-deco-1"></div>
+        <div class="hero-deco-line hero-deco-2"></div>
+
+        <div class="hero-content">
+            <div class="hero-tag-row">
+                <span class="hero-tag">✦ OPEN TO WORK</span>
+                <span class="hero-tag">2025</span>
+            </div>
+            <div class="hero-name-wrap">
+                <div class="hero-name-line overflow-hidden">
+                    <span class="hero-word" id="heroWord1">GOWTHAM</span>
+                </div>
+                <div class="hero-name-line overflow-hidden">
+                    <span class="hero-word hero-word-red" id="heroWord2"><em>C&thinsp;D</em></span>
+                </div>
+            </div>
+            <div class="hero-sub overflow-hidden">
+                <p id="heroSub">Designer · Developer · Creative Mind</p>
+            </div>
+            <div class="hero-actions" id="heroActions">
+                <a href="#about" class="btn-primary magnetic">
+                    <span>Explore</span>
+                    <i class="btn-arrow">↓</i>
+                </a>
+                <a href="./SOURCE/GOWTHAM C D.pdf" class="btn-outline magnetic" download>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-photos">
+            <div class="hero-photo-card card-a" data-speed="0.05">
+                <img src="./IMAGE/PIC 6.jpg" alt="Gowtham">
+            </div>
+            <div class="hero-photo-card card-b" data-speed="-0.08">
+                <img src="./IMAGE/PIC 4.jpg" alt="Gowtham">
+            </div>
+            <div class="hero-photo-card card-c" data-speed="0.12">
+                <img src="./IMAGE/PIC 5.jpg" alt="Gowtham">
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-track"><div class="scroll-thumb"></div></div>
+        </div>
+    </section>
+
+    <!-- Marquee Strip -->
+    <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>PORTFOLIO</span><span class="dot">✦</span>
+                <span>DESIGN</span><span class="dot">✦</span>
+                <span>DEVELOPMENT</span><span class="dot">✦</span>
+                <span>CREATIVE</span><span class="dot">✦</span>
+                <span>VIDEO EDITING</span><span class="dot">✦</span>
+                <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+                <span>PORTFOLIO</span><span class="dot">✦</span>
+                <span>DESIGN</span><span class="dot">✦</span>
+                <span>DEVELOPMENT</span><span class="dot">✦</span>
+                <span>CREATIVE</span><span class="dot">✦</span>
+                <span>VIDEO EDITING</span><span class="dot">✦</span>
+                <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>PORTFOLIO</span><span class="dot">✦</span>
+                <span>DESIGN</span><span class="dot">✦</span>
+                <span>DEVELOPMENT</span><span class="dot">✦</span>
+                <span>CREATIVE</span><span class="dot">✦</span>
+                <span>VIDEO EDITING</span><span class="dot">✦</span>
+                <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+                <span>PORTFOLIO</span><span class="dot">✦</span>
+                <span>DESIGN</span><span class="dot">✦</span>
+                <span>DEVELOPMENT</span><span class="dot">✦</span>
+                <span>CREATIVE</span><span class="dot">✦</span>
+                <span>VIDEO EDITING</span><span class="dot">✦</span>
+                <span>PHOTOGRAPHY</span><span class="dot">✦</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════
+         ABOUT SECTION
+    ═══════════════════════════════ -->
+    <section class="about" id="about">
+        <div class="section-watermark">01</div>
+        <div class="about-grid">
+
+            <!-- Left: Profile Card -->
+            <div class="about-left reveal-left">
+                <div class="profile-card">
+                    <div class="profile-card-glow"></div>
+                    <div class="profile-image-zone">
+                        <img src="./IMAGE/JOJO LOGO.png" alt="" class="jojo-logo">
+                        <img src="./IMAGE/JOJO PIC 1.png" alt="" class="jojo-pic">
+                        <img src="./IMAGE/MENANCING.gif" alt="" class="menace menace-l">
+                        <img src="./IMAGE/MENANCING.gif" alt="" class="menace menace-r">
+                    </div>
+                    <div class="profile-info">
+                        <span class="profile-role">USER</span>
+                        <h3 class="profile-name">GOWTHAM C D</h3>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: About Text -->
+            <div class="about-right">
+                <div class="reveal-up">
+                    <span class="section-eyebrow">ABOUT ME</span>
+                    <h2 class="section-title">A creative <em>mind</em><br>& technical <em>soul</em></h2>
+                </div>
+                <div class="about-paragraphs reveal-up">
+                    <p>I'm <strong>Gowtham C D</strong> — a creative and motivated person who loves working with technology and design. I enjoy learning new things and using my skills to build interesting and useful projects.</p>
+                    <p>I code in <strong>C, C++, Java, and Python</strong>, and have strong knowledge of web design. I'm also into video editing (CapCut, Adobe Premiere) and photo editing (Adobe Photoshop).</p>
+                    <p>In my free time, I read manga, explore new software, and practice editing. Always pushing to improve and stay updated with trends in tech and design.</p>
+                </div>
+                <div class="skill-tags reveal-up">
+                    <span class="tag">C / C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Web Design</span>
+                    <span class="tag">Photoshop</span>
+                    <span class="tag">Premiere Pro</span>
+                    <span class="tag">CapCut</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         PROJECTS SECTION
+    ═══════════════════════════════ -->
+    <section class="projects" id="projects">
+        <div class="section-watermark">02</div>
+        <div class="projects-header reveal-up">
+            <span class="section-eyebrow">MY WORK</span>
+            <h2 class="section-title">Selected<br><em>Projects</em></h2>
+        </div>
+        <div class="projects-list" id="projectsList"></div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         CONTACT SECTION
+    ═══════════════════════════════ -->
+    <section class="contact" id="contact">
+        <div class="section-watermark">03</div>
+        <div class="contact-inner">
+            <div class="contact-header reveal-up">
+                <span class="section-eyebrow">GET IN TOUCH</span>
+                <h2 class="section-title">Let's work<br><em>together</em></h2>
+                <p class="contact-subtitle">Have a project, idea, or just want to say hi?</p>
+            </div>
+            <div class="contact-cards">
+                <div class="contact-card reveal-up" data-delay="0">
+                    <div class="contact-card-top">
+                        <span class="contact-card-num">01</span>
+                        <div class="contact-card-icon">✏️</div>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Need logos, posters, social media creatives, or custom illustrations? Let's bring your vision to life with strong visual design.</p>
+                    <button class="contact-btn magnetic">Ask Me <span class="btn-arrow-sm">→</span></button>
+                </div>
+                <div class="contact-card reveal-up" data-delay="100">
+                    <div class="contact-card-top">
+                        <span class="contact-card-num">02</span>
+                        <div class="contact-card-icon">💻</div>
+                    </div>
+                    <h3>Project</h3>
+                    <p>Whether it's a tech project, website, or creative idea — I'm open to collaborating! Let's build something impactful together.</p>
+                    <button class="contact-btn magnetic">Ask Me <span class="btn-arrow-sm">→</span></button>
+                </div>
+                <div class="contact-card reveal-up" data-delay="200">
+                    <div class="contact-card-top">
+                        <span class="contact-card-num">03</span>
+                        <div class="contact-card-icon">🎤</div>
+                    </div>
+                    <h3>Workshop</h3>
+                    <p>Available for offline training, technical sessions, or design workshops at your college or event.</p>
+                    <button class="contact-btn magnetic">Ask Me <span class="btn-arrow-sm">→</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         FOOTER
+    ═══════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-big-text" aria-hidden="true">GOWTHAM</div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-tagline">Built with passion.<br>Designed with purpose.</p>
+                <span class="footer-copy">© 2025 Gowtham C D. All rights reserved.</span>
+            </div>
+            <div class="footer-socials">
+                <a href="" class="social-link magnetic" aria-label="GitHub">
+                    <img src="./IMAGE/GITHUB LOGO.png" alt="">
+                    <span>GitHub</span>
+                </a>
+                <a href="" class="social-link magnetic" aria-label="Instagram">
+                    <img src="./IMAGE/INSTA LOGO.png" alt="">
+                    <span>Instagram</span>
+                </a>
+                <a href="" class="social-link magnetic" aria-label="LinkedIn">
+                    <img src="./IMAGE/LINKEDIN LOGO.png" alt="">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="" class="social-link magnetic" aria-label="YouTube">
+                    <img src="./IMAGE/YOUTUBE LOGO.png" alt="">
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
